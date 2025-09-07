@@ -1,25 +1,72 @@
-[gd_scene format=3 uid="uid://4iv288g4j8h2"]
+[gd_scene load_steps=2 format=3 uid="uid://4iv288g4j8h2"]
+
+[ext_resource type="Script" uid="uid://7m7toaquiosn" path="res://Source/new_script.gd" id="1_02g4j"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
+anchors_preset = 0
+script = ExtResource("1_02g4j")
+
+[node name="CanvasGroup3" type="CanvasGroup" parent="."]
+position = Vector2(878, 47)
+
+[node name="Label" type="Label" parent="CanvasGroup3"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 32.0
+offset_bottom = 11.5
 grow_vertical = 2
+text = "IP地址"
 
-[node name="CanvasGroup" type="CanvasGroup" parent="."]
+[node name="TextEdit" type="TextEdit" parent="CanvasGroup3"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -18.0
+offset_right = 249.0
+offset_bottom = 18.0
+grow_vertical = 2
+text = "127.0.0.1"
 
-[node name="Button" type="Button" parent="CanvasGroup"]
+[node name="CanvasGroup2" type="CanvasGroup" parent="."]
+position = Vector2(879, 98)
+
+[node name="Label" type="Label" parent="CanvasGroup2"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 32.0
+offset_bottom = 11.5
+grow_vertical = 2
+text = "端口"
+
+[node name="TextEdit" type="TextEdit" parent="CanvasGroup2"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -18.0
+offset_right = 249.0
+offset_bottom = 18.0
+grow_vertical = 2
+text = "8001"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 134.0
-offset_top = 105.0
-offset_right = 425.0
-offset_bottom = 200.0
+offset_left = 445.0
+offset_top = 506.0
+offset_right = 736.0
+offset_bottom = 601.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(0.5, 0.5)
+text = "登录"
